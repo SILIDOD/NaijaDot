@@ -1,0 +1,198 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Background Carousel</title>
+   Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Font Awesome CSS (for optional icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Your custom CSS (optional) -->
+  <style>
+    /* Make the image fully responsive */
+    .carousel-inner img {
+        width: 100%;
+        height: 100%;
+    }
+    </style>
+  </head>
+  <body>
+  
+  <div id="demo" class="carousel slide" data-ride="carousel">
+  
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="logo1.jpg" alt="Los Angeles" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="chicago.jpg" alt="Chicago" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="ny.jpg" alt="New York" width="1100" height="500">
+      </div>
+    </div>
+    
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+  
+  
+  <nav class="navbar navbar-expand-lg navbar-dark  ">
+    <div class="container">
+      <a class="navbar-brand text-success" href="#">Naija.Dot</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto ">
+          <li class="nav-item active ">
+            <a class="nav-link" href="#"><i class="fas fa-home "></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-user"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-blog"></i> Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-envelope"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  .navbar-brand{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    }
+    .nav-item{
+    padding-left: 60px;
+    position: relative;
+    left: 50px;
+    }
+    
+.title-section .heading:before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: #51ff00;
+  }
+  
+  .title-section .heading {
+  color: #fff;
+  font-size: 20px;
+  position: relative;
+  padding-left: 30px;
+  }
+  
+  .title-section {
+  margin-bottom: 30px;
+  }
+  
+
+  <div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;right:0" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+    <a href="#" class="w3-bar-item w3-button">Dashboard</a>
+    <a href="#" class="w3-bar-item w3-button">Reports</a>
+    <a href="#" class="w3-bar-item w3-button">Settings</a>
+  </div>
+  
+  <div class="w3-main" style="margin-right:200px">
+    <button class="w3-button w3-large w3-light-grey" onclick="w3_open()">Open &raquo;</button>
+    <!-- Main content goes here -->
+  </div>
+  
+  <script>
+ function w3_open() {
+document.getElementById("mySidebar").style.display = "block";
+document.getElementById("mySidebar").style.width = "200px";
+document.getElementById("mySidebar").style.paddingTop = "50px";
+document.getElementById("mySidebar").style.height = "120%";
+document.getElementById("mySidebar").style.right = "0";
+document.getElementById("mySidebar").style.backgroundColor = "black";
+}
+
+function w3_close() {
+document.getElementById("mySidebar").style.display = "none";
+}
+  </script> 
+
+  <div class="row align-items-center">
+    <div class="col-6 col-md-3">
+      <a href="#" class="text-secondary px-2 pl-0"><span class="icon-facebook"></span></a>
+      <a href="#" class="text-secondary px-2"><span class="icon-instagram"></span></a>
+      <a href="#" class="text-secondary px-2"><span class="icon-twitter"></span></a>
+      <a href="#" class="text-secondary px-2"><span class="icon-linkedin"></span></a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!DOCTYPE html>
+<html>
+<head>
+<style> 
+.img1 {
+  width: 100px;
+  height: 100px;
+
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: 2s;
+}
+
+@keyframes example {
+  0%   { left:200px; top:0px;}
+
+  100% { left:0px; top:0px;}
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Animation</h1>
+
+<p>The animation-delay property specifies a delay for the start of an animation. The following example has a 2 seconds delay before starting the animation:</p>
+<img src="images/logo3.jpeg" class="img1">
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/css/tryit.asp?filename=trycss3_animation_delay by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 05 Sep 2022 14:29:28 GMT -->
+</html>
+
+
+
+  <!-- Bootstrap JS and dependencies (jQuery, Popper.js) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html> 
